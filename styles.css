@@ -392,7 +392,7 @@ th:nth-of-type(even), td:nth-of-type(even){
 #social h4{
     /* Styles were added here to arrange the content, these are grid children styles */
     /* TO DO */
-    grid-columns: 1/1;
+    grid-column: 1/1;
 }
 
 #social a{

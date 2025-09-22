@@ -1,5 +1,5 @@
 /*
-    Name: 
+    Name: Ethan Tom-Lin
 */
 
 :root{
@@ -74,6 +74,8 @@ header{
     background-size: contain;
     /* Styles were added here to arrange the content, I used flexbox */
     /* TO DO */
+    display: flex;
+    flex-wrap: wrap;
 }
 
 /* For All Headings */
@@ -137,6 +139,8 @@ nav ul{
     padding: 0;
     /* Styles were added here to arrange the content, I used flexbox */
     /* TO DO */
+    display: flex;
+    flex-wrap: wrap;
 }
 
 nav a{
@@ -165,6 +169,8 @@ nav a span{
     position: relative;
     /* Styles were added here to arrange the content, I used top and z-index for this */
     /* TO DO */
+    z-index: 2;
+    top: -140px;
 }
 
 nav a:focus{
@@ -224,17 +230,23 @@ p{
     padding: 96px 32px;
     /* Styles were added here to arrange the content, I used grid */
     /* TO DO */
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 16px;
 }
 
 #plants h3, #plants > p{
     /* Styles were added here to arrange the content, these are grid children styles */
     /* TO DO */
+    grid-column: 1/4;
 }
 
 #plants section{
     /* Styles were added here to arrange the content, I used flexbox */
     /* TO DO */
     margin: 32px auto 0;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 #plants h4{
@@ -247,6 +259,7 @@ p{
     width: 100%;
     max-width: 400px;
     height: auto;
+    order: -1;
 }
 
 .price{
@@ -265,12 +278,18 @@ p{
     padding: 64px 32px;
     /* Styles were added here to arrange the content, I used grid */
     /* TO DO */
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto auto auto;
+    justify-content: right;
+    align-items: center;
 }
 
 /* Contact Heading and Paragraph */
 #contact h3, #contact > p{
     /* Styles were added here to arrange the content, these are grid children styles */
     /* TO DO */
+    grid-column: 1/4;
 }
 
 /* Contact text color */
@@ -282,6 +301,10 @@ p{
 #contact a{
     display: block;
     padding: 4px 0;
+}
+
+#contact p{
+    width: 80%;
 }
 
 #contact > div, #contact > section{
@@ -361,12 +384,15 @@ th:nth-of-type(even), td:nth-of-type(even){
     margin: 16px auto;
     list-style-type: none;
     padding: 0;
+    display: grid;
+    grid-template-columns: auto auto auto;
 }
 
 /* Heading for Social Media Section */
 #social h4{
     /* Styles were added here to arrange the content, these are grid children styles */
     /* TO DO */
+    grid-columns: 1/1;
 }
 
 #social a{
